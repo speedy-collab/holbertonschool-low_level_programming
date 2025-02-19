@@ -1,14 +1,21 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
+#include "main.h"
 
-/* betty style doc for function main goes there */
+/**
+ * main - prints _putchar, followed by a new line
+ *
+ * Return: 0 on success
+ */
 int main(void)
 {
-	int n;
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	return (0);
+return (0);
 }
