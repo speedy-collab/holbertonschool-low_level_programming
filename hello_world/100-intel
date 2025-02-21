@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Ensure that the C file variable is set
+if [ -z "$CFILE" ]; then
+    echo "Please set the CFILE environment variable with the C file name."
+    exit 1
+fi
+
+# Check if the C file exists
+if [ ! -f "$CFILE" ]; then
+    echo "The file $CFILE does not exist."
+    exit 1
+fi
+
+# Get the base name of the C file without the extension
+BASE_NAME=$(basename "$CFILE" .c)
+
+# Generate the assembly code using gcc
+gcc -S "$CFILE" -o "${BASE_NAME}.s"
+
+# Check if the file was created
+if [ -f "${BASE_NAME}.s" ]; then
+    echo "Assembly code has been saved to ${BASE_NAME}.s"
+else
+    echo "Failed to generate assembly code."
+    exit 1
+fi
