@@ -16,11 +16,9 @@ else
 return (0);
 }
 }
-
 int main(void)
 {
-/* Test the function */
-printf("%d\n", _isdigit('5'));/* Should print 1 */
-printf("%d\n", _isdigit('a'));/* Should print 0 */
+printf("%d\n", _isdigit('5'));
+printf("%d\n", _isdigit('a'));
 return (0);
 }
