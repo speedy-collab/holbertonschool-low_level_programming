@@ -1,17 +1,13 @@
 #include "main.h"
 
 /**
-* main - Test the mul function
-*
-* Return: Always 0 (Success)
+* mul - a function that multiplies two integers
+* @a : first number to pultiply
+* @b : second number to multiply
+* Return: Always a*b (Success)
 */
 
-int main(void)
+int mul(int a, int b)
+{return a * b;
 
-{
-int result = mul(3, 4);
-_putchar(result + '0');
-_putchar('\n');
-return (0);
 }
-
