@@ -13,12 +13,12 @@ for (j = 0; j <= 14; j++)
 {
 if (j >= 10)
 {
-_putchar('1');  /* Print the tens place (1 for 10 to 14) */
+_putchar('1');/* Print the tens place (1 for 10 to 14) */
 }
 
-_putchar(j % 10 + '0');  /* Print the ones place */
+_putchar(j % 10 + '0');/* Print the ones place */
 }
 
-_putchar('\n');  /* Print a new line after each iteration */
+_putchar('\n');/* Print a new line after each iteration */
 }
 }
