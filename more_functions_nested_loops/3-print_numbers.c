@@ -14,4 +14,3 @@ _putchar(c);  /* Print each number */
 
 _putchar('\n');  /* Print a new line */
 }
-
