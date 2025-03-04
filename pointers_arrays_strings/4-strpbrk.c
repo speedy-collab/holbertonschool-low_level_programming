@@ -23,5 +23,5 @@ return (s + i);  /* Return the pointer to the matching byte in s */
 }
 }
 
-return (NULL);  /* Return NULL if no matching byte is found */
+return ('\0');  /* Return NULL if no matching byte is found */
 }
