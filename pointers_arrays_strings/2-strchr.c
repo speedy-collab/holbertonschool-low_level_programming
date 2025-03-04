@@ -24,5 +24,5 @@ if (c == '\0')  /* If character c is the null terminator */
 return (s);
 }
 
-return (NULL);
+return ('\0');
 }
