@@ -26,4 +26,3 @@ return (s);
 
 return (NULL);
 }
-
