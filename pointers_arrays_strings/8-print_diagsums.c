@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+/**
+* print_diagsums - prints the sum of the two diagonals of a square matrix.
+* @a: a pointer to the first element of the matrix.
+* @size: the size of the square matrix (number of rows and columns).
+*
+* Description: This function calculates and prints the sum of the two diagonals
+*              of a square matrix. The first diagonal is from top-left to bottom-right,
+*              and the second diagonal is from top-right to bottom-left.
+*/
+void print_diagsums(int *a, int size)
+{
+int i;
+int sum1 = 0, sum2 = 0;
+
+for (i = 0; i < size; i++)
+{
+sum1 += a[i * size + i];  /* Sum for the top-left to bottom-right diagonal */
+sum2 += a[i * size + (size - 1 - i)];  /* Sum for the top-right to bottom-left diagonal */
+}
+
+printf("%d, %d\n", sum1, sum2);  /* Print the sums of both diagonals */
+}
