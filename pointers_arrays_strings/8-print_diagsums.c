@@ -5,9 +5,7 @@
 * @a: a pointer to the first element of the matrix.
 * @size: the size of the square matrix (number of rows and columns).
 *
-* Description: This function calculates and prints the sum of the two diagonals
-*              of a square matrix. The first diagonal is from top-left to bottom-right,
-*              and the second diagonal is from top-right to bottom-left.
+* Description: Write a function that prints the sum of the two diagonals of a square matrix of integers.
 */
 void print_diagsums(int *a, int size)
 {
