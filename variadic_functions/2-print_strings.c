@@ -9,7 +9,7 @@
 *
 * Description: This function prints the strings passed as arguments,
 * separated by the specified separator. If a string is NULL, it prints (nil).
-* If the separator is NULL, it is not printed. A new line is printed at the end.
+* If the separator is NULL, it is not printed. A new line is printed at the end
 */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
